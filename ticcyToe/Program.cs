@@ -5,11 +5,25 @@ namespace ticcyToe
     class Program
     {
         
-        string array[] = {'1' , '2', '3', '4', '5', '6', '7', '8', '9'};
-        
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
+         static void drawBoard(string[] args){
+           
+           char[,] board = new char [3,3];
+           board[0,0]= 'X';
+           board[2,2]= 'O';
+
+           for(int row=0; row<3; row++){
+               Console.Write("| ");
+               for(int col= 0; col<3; col++)
+               {
+                   Console.Write(board[row, col]);
+                   Console.Write(" | ");
+               }
+               Console.WriteLine();
+           }
         }
+
+        
+        
+        
     }
 }
