@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ticcyToe
 {
@@ -79,30 +79,6 @@ namespace ticcyToe
 
 
             }
-
-    
-
-           /*  bool win=false;
-
-            if(win==false){
-
-                //keep playing
-                 for(int i=0; i<10; i++){
-                    //ask the player for spot
-                    Console.WriteLine("Which spot would you like to mark?");
-                    string chosenSpot = Console.ReadLine();
-
-                    //user_proof
-                        if(chosenSpot != "1" && chosenSpot!= "2"&& chosenSpot!="3"&&chosenSpot!="4"&&chosenSpot!="5"&&chosenSpot!="6"&&chosenSpot!="7"&&chosenSpot!="8"&&chosenSpot!="9"){
-                        Console.WriteLine("Please choose only from numbers 1 to 9");
-                        }
-
-                    //check if spot is not taken
-
-                }
-
-            } */
-            
         
 
         }
