@@ -1,0 +1,11 @@
+C:\Users\evanf\Documents\GitHub\ticcyToe\ticcyToe\bin\Debug\netcoreapp3.1\ticcyToe.exe
+C:\Users\evanf\Documents\GitHub\ticcyToe\ticcyToe\bin\Debug\netcoreapp3.1\ticcyToe.deps.json
+C:\Users\evanf\Documents\GitHub\ticcyToe\ticcyToe\bin\Debug\netcoreapp3.1\ticcyToe.runtimeconfig.json
+C:\Users\evanf\Documents\GitHub\ticcyToe\ticcyToe\bin\Debug\netcoreapp3.1\ticcyToe.runtimeconfig.dev.json
+C:\Users\evanf\Documents\GitHub\ticcyToe\ticcyToe\bin\Debug\netcoreapp3.1\ticcyToe.dll
+C:\Users\evanf\Documents\GitHub\ticcyToe\ticcyToe\bin\Debug\netcoreapp3.1\ticcyToe.pdb
+C:\Users\evanf\Documents\GitHub\ticcyToe\ticcyToe\obj\Debug\netcoreapp3.1\ticcyToe.csprojAssemblyReference.cache
+C:\Users\evanf\Documents\GitHub\ticcyToe\ticcyToe\obj\Debug\netcoreapp3.1\ticcyToe.AssemblyInfoInputs.cache
+C:\Users\evanf\Documents\GitHub\ticcyToe\ticcyToe\obj\Debug\netcoreapp3.1\ticcyToe.AssemblyInfo.cs
+C:\Users\evanf\Documents\GitHub\ticcyToe\ticcyToe\obj\Debug\netcoreapp3.1\ticcyToe.dll
+C:\Users\evanf\Documents\GitHub\ticcyToe\ticcyToe\obj\Debug\netcoreapp3.1\ticcyToe.pdb

@@ -8,30 +8,24 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Evan\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\evanf\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Evan\\Desktop\\IPL Projects\\ticcyToe\\ticcyToe.csproj",
+      "projectUniqueName": "C:\\Users\\evanf\\Documents\\GitHub\\ticcyToe\\ticcyToe\\ticcyToe.csproj",
       "projectName": "ticcyToe",
-      "projectPath": "C:\\Users\\Evan\\Desktop\\IPL Projects\\ticcyToe\\ticcyToe.csproj",
-      "packagesPath": "C:\\Users\\Evan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Evan\\Desktop\\IPL Projects\\ticcyToe\\obj\\",
+      "projectPath": "C:\\Users\\evanf\\Documents\\GitHub\\ticcyToe\\ticcyToe\\ticcyToe.csproj",
+      "packagesPath": "C:\\Users\\evanf\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\evanf\\Documents\\GitHub\\ticcyToe\\ticcyToe\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Evan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\evanf\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
