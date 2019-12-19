@@ -23,8 +23,8 @@ namespace ticcyToe
                 Console.Write("| ");
                 for(int col= 0; col<3; col++)
                 {
-                   Console.Write(drawBoard[row, col]);
-                   Console.Write(" | ");
+                    Console.Write(drawBoard[row, col]);
+                    Console.Write(" | ");
                 }
                 Console.WriteLine();
             }
@@ -39,35 +39,43 @@ namespace ticcyToe
             if (board[Convert.ToInt32(chosenSpot)] == "X" || board[Convert.ToInt32(chosenSpot)] == "O"){
                 Console.WriteLine("That spot is already taken!");
             }
-
+            board[Convert.ToInt32(chosenSpot)] = xOrO[0];
         }
 
         //check win methods
-        static void Wins(string[] board, string[] xOrO)
+        static bool Wins(string[] board, string[] xOrO)
         {
         
-        //horizontal win
-        if ((String.Equals(board[0], board[1]) && String.Equals(board[1], board[2])) ||
-            (String.Equals(board[3], board[4]) && String.Equals(board[4], board[5])) ||
-            (String.Equals(board[6], board[7]) && String.Equals(board[7], board[8])))
+            //horizontal win
+            if ((String.Equals(board[0], board[1]) && String.Equals(board[1], board[2])) ||
+                (String.Equals(board[3], board[4]) && String.Equals(board[4], board[5])) ||
+                (String.Equals(board[6], board[7]) && String.Equals(board[7], board[8])))
             {
-                Console.WriteLine("Congratulations! Player {0} wins!", xOrO[1]); 
+                Console.WriteLine("Congratulations! Player {0} wins!", xOrO[1]);
+                return true;
             }
 
 
-        //vertical win
-        else if ((String.Equals(board[0], board[3]) && String.Equals(board[3], board[6])) ||
-                 (String.Equals(board[1], board[4]) && String.Equals(board[4], board[7])) ||
-                 (String.Equals(board[2], board[5]) && String.Equals(board[5], board[8])))
+            //vertical win
+            else if ((String.Equals(board[0], board[3]) && String.Equals(board[3], board[6])) ||
+                     (String.Equals(board[1], board[4]) && String.Equals(board[4], board[7])) ||
+                     (String.Equals(board[2], board[5]) && String.Equals(board[5], board[8])))
             {
-                Console.WriteLine("Congratulations! Player {0} wins!", xOrO[1]); 
+                Console.WriteLine("Congratulations! Player {0} wins!", xOrO[1]);
+                return true;
             }
 
-        //diagonal win
-        else if ((String.Equals(board[0], board[4]) && String.Equals(board[4], board[8])) ||
-                 (String.Equals(board[2], board[4]) && String.Equals(board[4], board[6])))
+            //diagonal win
+            else if ((String.Equals(board[0], board[4]) && String.Equals(board[4], board[8])) ||
+                     (String.Equals(board[2], board[4]) && String.Equals(board[4], board[6])))
             {
-                Console.WriteLine("Congratulations! Player {0} wins!", xOrO[1]); 
+                Console.WriteLine("Congratulations! Player {0} wins!", xOrO[1]);
+                return true;
+            }
+
+            else
+            {
+                return false;
             }
         }
         
@@ -80,7 +88,7 @@ namespace ticcyToe
             string[] board = new string[9];
             for (int i=0; i<9;i++)
             {
-                board[i] = Convert.ToString(i+1);
+                board[i] = Convert.ToString(i);
             }
             string[] xOrO = {"O","X"};
             
@@ -88,12 +96,16 @@ namespace ticcyToe
             //turns
             for (int i=0; i<9; i++){
 
-                Wins();
+                Wins(board, xOrO);
                 string temp = xOrO[0];
                 xOrO[0] = xOrO[1];
                 xOrO[1] = temp;
 
-                DrawBoard();
+                DrawBoard(board);
+                if (Wins(board, xOrO) == true)
+                {
+                    break;
+                }
             
                 //take spot
                 Console.WriteLine("Which spot would you like to mark, {0}?", xOrO[0]);
@@ -103,6 +115,7 @@ namespace ticcyToe
                 {
                     Console.WriteLine("That spot is already taken!");
                     CheckSpot(board, xOrO);
+                    i--;
                 }
                 else
                 {
